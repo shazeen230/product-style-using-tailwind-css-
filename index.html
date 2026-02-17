@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    
+
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+
+  <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md space-y-4">
+
+    <h2 class="text-2xl font-bold text-center text-blue-600">
+      Add Product
+    </h2>
+
+    <input id="title" type="text" placeholder="Enter your product name"
+      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+    <input id="brand" type="text" placeholder="Brand name"
+      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+    <input id="quantity" type="text" placeholder="Quantity"
+      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+    <input id="quality" type="text" placeholder="Quality"
+      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+    <input id="price" type="text" placeholder="Price"
+      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+    <button onclick="product()"
+      class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition duration-300">
+      Add Product
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- <button onclick="product1()">product1</button> -->
+<button onclick="cancel()">cancel</button>
+<button onclick="edit()">edit</button>
+
+<div id="showdata"></div>
+
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
